@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Editor de Imágenes IA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Editor de Imágenes con IA</h1>
+
+    <div class="controls">
+      <label>Cargar imagen: <input id="imageInput" type="file" accept="image/*"></label>
+      <label>Prompt: <input id="prompt" placeholder="Describe la edición (p. ej. 'remueve el objeto', 'hazlo estilo pintura al óleo')"></label>
+      <button id="apply">Aplicar edición IA</button>
+      <button id="download" disabled>Descargar resultado</button>
+    </div>
+
+    <p class="hint">Pinta la máscara para indicar el área a editar (áreas pintadas se editarán). Usa el control de tamaño de pincel y el botón borrar para reiniciar la máscara.</p>
+
+    <div class="editor">
+      <div class="canvas-wrap">
+        <canvas id="imageCanvas"></canvas>
+        <canvas id="maskCanvas"></canvas>
+      </div>
+      <div class="tools">
+        <label>Pincel: <input id="brushSize" type="range" min="4" max="80" value="36"></label>
+        <button id="clearMask">Borrar máscara</button>
+      </div>
+    </div>
+
+    <div class="preview">
+      <h2>Resultado</h2>
+      <img id="result" alt="Resultado IA" />
+    </div>
+
+    <small>Nota: necesitas configurar OPENAI_API_KEY en el servidor o en secrets si despliegas.</small>
+  </div>
+
+  <script src="js/editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body { font-family: Arial, Helvetica, sans-serif; background: #f3f4f6; margin: 0; padding: 2rem; }
+.container { max-width: 960px; margin: 0 auto; background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.controls { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.controls input[type="file"] { display: inline-block; }
+.editor { display: flex; gap: 1rem; align-items: flex-start; }
+.canvas-wrap { position: relative; width: 640px; height: 480px; background: #ddd; }
+canvas { position: absolute; left: 0; top: 0; width: 640px; height: 480px; image-rendering: pixelated; }
+.tools { display: flex; flex-direction: column; gap: 0.5rem; }
+.preview img { max-width: 100%; height: auto; border: 1px solid #ddd; }
+.hint { color: #555; font-size: 0.9rem; }
+button { padding: 0.4rem 0.7rem; }
