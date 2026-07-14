@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Random Joke Generator</h1>
+    <div id="joke" aria-live="polite">Click the button to get a joke.</div>
+    <button id="getJoke">Get a joke</button>
+    <p>
+      Source: 
+      <select id="apiSelect">
+        <option value="icanhaz">icanhazdadjoke</option>
+        <option value="official">Official Joke API</option>
+      </select>
+    </p>
+  </div>
+  <script src="js/joke.js"></script>
+</body>
+</html>

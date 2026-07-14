@@ -1,0 +1,5 @@
+body { font-family: Arial, Helvetica, sans-serif; padding: 2rem; background: #f7f7f7; }
+.container { max-width: 680px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+#joke { margin: 1rem 0; font-size: 1.1rem; }
+button { padding: 0.5rem 1rem; font-size: 1rem; cursor: pointer; }
+select { margin-left: 0.5rem; }
